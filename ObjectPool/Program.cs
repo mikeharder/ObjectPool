@@ -88,10 +88,10 @@ namespace ObjectPool
         private static async Task Test(ObjectPool<MyObject> pool, Func<object> generateOwner,
             Action incrementIterations, Action incrementFailures)
         {
-            var owner = generateOwner();
-
             while (true)
             {
+                var owner = generateOwner();
+
                 var rand = _random.Next();
                 var obj = pool.GetObject(owner);
 
