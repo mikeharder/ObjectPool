@@ -1,0 +1,3 @@
+[submodule "ConcurrentRandom"]
+	path = ConcurrentRandom
+	url = https://github.com/mikeharder/ConcurrentRandom
